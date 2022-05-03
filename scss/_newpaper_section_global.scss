@@ -1,0 +1,96 @@
+.about {
+    background-color: #fefefa;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.head{
+    text-align: center;
+    position: relative;
+}
+
+.subhead{
+    border-bottom: 2px solid #9e4624;
+    border-top: 2px solid#9e4624;
+    padding: 12px 0 12px 0;
+    font-family: 'Redressed', cursive;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.content {
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+}
+
+.collumn {
+    line-height: 18px;
+    width: 19.5%;
+    display: inline-block;
+    padding: 0 0.7% 0 0.7%;
+    vertical-align: top;
+}
+
+.collumn + .collumn { 
+  border-left: 1px solid #50b698;
+}
+
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+}  
+
+.collumn .figure {
+    margin: 0 0 7px;
+}
+
+.collumn .figcaption{
+  font-style: italic;
+  font-size: 10px;
+  color: #536872;
+}
+
+.media {
+  width: 100%;
+}
+
+.collumn .citation{
+    font-family: 'Playfair Display', serif;
+    color:#43997f;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    margin: 20px 0 20px 0;
+    font-feature-settings: "liga", "dlig";
+}
+
+.collumn .citation:before{
+    border-top: 1px solid #fdbcb4;
+    content: '';
+    width: 120px;
+    height: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.collumn .citation:after{
+    border-bottom: 1px solid #fdbcb4;
+    content: '';
+    width: 120px;
+    height: 6px;
+    display: block;
+    margin: 0 auto;
+}
+

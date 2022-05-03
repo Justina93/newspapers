@@ -1,0 +1,25 @@
+.collumn .headline.hl2{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 23px;
+    box-sizing: border-box;
+    padding: 5px 0 5px 0;
+    color: #2f4f4f;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #f4c2c2;
+    content: '';
+    width: 150px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #f4c2c2;
+    content: '';
+    width: 150px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+}

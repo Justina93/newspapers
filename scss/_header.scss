@@ -1,0 +1,44 @@
+header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: calc(5rem + 1rem);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease;
+    transition-property: height, background-color; 
+}
+
+header.sticky {
+    height: calc(2.5rem + 1rem);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .nav-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    transition: 0.3s ease;
+}
+
+#clover {
+    width: 40px;
+}
+
+.nav-close-btn, .nav-menu-btn {
+    display: none;
+}
+
+.navigation .nav-items a {
+    color: #43997f;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}

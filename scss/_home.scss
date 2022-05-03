@@ -1,0 +1,96 @@
+.home {
+    min-height: 100vh;
+}
+
+.bg-slider {
+    z-index: 777;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bg-slider .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-slider .swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    animation-name: scale;
+    animation-duration: 3s;
+}
+
+.swiper-slide .text-content {
+    position: absolute;
+    top: 25%;
+    color: var(--white-color);
+    margin: 0 100px;
+}
+
+.swiper-slide .text-content .tittle {
+    font-family: 'Redressed', cursive;
+    font-size: 4.3rem;
+    font-weight: 500;
+    text-shadow: var(--text-shadow);
+    margin-bottom: 20px;
+    transform: translateY(-50px);
+    opacity: 0;
+    color: #fff;
+}
+
+.swiper-slide-active .text-content .tittle {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;
+
+}
+
+.swiper-slide .text-content p {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 1.3;
+    background: rgba(255, 255, 255, 0.1);
+    color: #000;
+    backdrop-filter: blur(5px);
+    text-shadow: var(--text-shadow);
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
+    transform: translateX(-80px);
+    opacity: 0;
+}
+
+.swiper-slide-active .text-content p {
+    transform: translateX(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;  
+}
+
+.swiper-slide .text-content .read-btn {
+    border: none;
+    outline: none;
+    background-color:#43997f;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px 17px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translateX(50px);
+    opacity: 0;
+}
